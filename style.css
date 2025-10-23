@@ -1,0 +1,493 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e10;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(135deg, #005bea, #00c6fb);
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+nav {
+  background-color: #1b1b1f;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #00c6fb;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00c6fb;
+}
+
+.news-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.news-item {
+  background-color: #18181b;
+  border-radius: 15px;
+  overflow: hidden;
+  width: calc(50% - 15px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 198, 251, 0.3);
+}
+
+.news-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+}
+
+.news-content h3 {
+  color: #00c6fb;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.news-content p {
+  color: #ccc;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+footer {
+  background-color: #1b1b1f;
+  color: #888;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 0.9em;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+  .news-item {
+    width: 100%;
+  }
+
+  .news-content h3 {
+    font-size: 1em;
+  }
+}
+/* === Sosial Media Icons === */
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 15px;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  font-size: 25px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: #222;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  color: white;
+}
+
+/* Warna Khusus per Platform */
+.github:hover { background: #24292e; }
+.whatsapp:hover { background: #25D366; }
+.youtube:hover { background: #FF0000; }
+.instagram:hover { background:#833AB4; }
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 15px 0;
+  color: #888;
+  font-size: 14px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+.hero span {
+  color: #fff;
+  font-weight: 700;
+}
+
+nav {
+  background: #111;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a.active, nav ul li a:hover {
+  color: #00c6ff;
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.profile-card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.3);
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid #00c6ff;
+  box-shadow: 0 0 25px rgba(0, 198, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  image-rendering: -webkit-optimize-contrast; /* biar lebih tajam */
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 198, 255, 0.6);
+}
+
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #00c6ff, #007bff);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  transform: scale(1.05);
+}
+
+/* === Sosial Media Icons === */
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 15px;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  font-size: 25px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background: #222;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  color: white ;
+}
+.profile-card {
+  background: #111;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: scale(1.02);
+}
+
+.profile-img {
+  width: 180px;            /* Ukuran foto pas */
+  height: 180px;
+  border-radius: 50%;      /* Membuat bulat */
+  object-fit: cover;       /* Supaya proporsional */
+  border: 4px solid #00c6ff; /* Warna border keren */
+  margin-bottom: 20px;
+  box-shadow: 0 0 25px rgba(0, 198, 255, 0.4);
+  transition: 0.3s;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(0, 198, 255, 0.6);
+}
+
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle at top, #0a0a0a 30%, #000 90%);
+}
+
+.profile-card h2 {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.profile-card p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #00c6ff, #007bff);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  transform: scale(1.05);
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+  padding: 0;
+}
+
+.social-icons li a {
+  font-size: 28px;
+  color: white;
+  background: #222;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.social-icons li a:hover {
+  transform: translateY(-5px);
+  color: #fff;
+}
+
+/* Warna platform */
+.github:hover { background: #24292e; }
+.whatsapp:hover { background: #25D366; }
+.youtube:hover { background: #FF0000; }
+
+footer {
+  background: #0b0b0b;
+  color: #888;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+    /* === FORM KONTAK ELEGAN & FUTURISTIK === */
+form {
+  background: rgba(20, 20, 25, 0.9);
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 198, 255, 0.2);
+  max-width: 500px;
+  margin: 60px auto;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 198, 255, 0.2);
+}
+
+form h2 {
+  text-align: center;
+  color: #00c6ff;
+  font-size: 1.6em;
+  margin-bottom: 25px;
+  text-shadow: 0 0 10px rgba(0, 198, 255, 0.4);
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ddd;
+  font-weight: 500;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.4);
+}
+
+/* === FUTURISTIC BUTTON === */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #00c6ff, #007bff);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.3);
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+  transition: all 0.6s ease;
+}
+
+button:hover::before {
+  left: 100%;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 198, 255, 0.6);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 25px;
+  }
+}
